@@ -1,0 +1,21 @@
+<!DOCTYPE html >
+<html>
+  <head>
+    <title>Project Play Family Centre</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" />
+    <link rel="stylesheet" href="/main.css" />
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" href="/main.js"></script>
+  </head>
+  <body>
+    <%- partial('_header') %>
+    <div class="container">
+      <%- yield %>
+      <%- partial('_footer') %>
+    </div>
+  </body>
+</html>
