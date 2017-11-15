@@ -75,13 +75,49 @@ body {
 }
 
 /** Home Page */
-
-.teaser-image {
-  text-align: center;
-  img {
-    height: 390px;
+.carousel-inner {
+  .item {
+    &.active {
+      img {
+        max-height: 480px;
+        margin: auto;
+      }
+    }
   }
 }
+
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
 
 .circle-button {
   margin-right: 24px;
